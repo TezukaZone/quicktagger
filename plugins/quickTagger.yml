@@ -1,0 +1,10 @@
+# requires: CommunityScriptsUILibrary
+name: QuickTagger
+description: Adds quick scene tagging functionality with configurable tag buttons for batch tagging scenes.
+url: https://github.com/stashapp/CommunityScripts
+version: 1.0.0
+ui:
+  javascript:
+  - quickTagger.js
+  css:
+  - quickTagger.css

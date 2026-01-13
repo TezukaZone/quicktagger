@@ -1,0 +1,79 @@
+/* QuickTagger Plugin Styles */
+
+/* Quick Tag Button in Scene List Operations */
+.quicktagger-button {
+  margin-left: 0.5rem;
+}
+
+.quicktagger-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Modal Styles */
+.quicktagger-modal .modal-dialog {
+  max-width: 600px;
+}
+
+.quicktagger-modal .modal-body {
+  min-height: 100px;
+}
+
+/* Empty State */
+.quicktagger-empty-state {
+  color: var(--bs-gray-600);
+}
+
+.quicktagger-empty-state p {
+  margin-bottom: 0.5rem;
+}
+
+/* Tag Button Grid */
+.quicktagger-tag-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* Individual Tag Buttons */
+.quicktagger-tag-button {
+  flex: 0 1 auto;
+  min-width: 100px;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.quicktagger-tag-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.quicktagger-tag-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .quicktagger-modal .modal-dialog {
+    max-width: 90%;
+  }
+
+  .quicktagger-tag-grid {
+    flex-direction: column;
+  }
+
+  .quicktagger-tag-button {
+    max-width: 100%;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .quicktagger-tag-button {
+  border-color: var(--bs-primary);
+}
+
+[data-theme="dark"] .quicktagger-empty-state {
+  color: var(--bs-gray-400);
+}
